@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для моей принцесски</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            box-sizing: border-box;
+            font-family: 'Comfortaa', cursive; /* Милый шрифт */
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background: #fceef0; /* Мягкий фон */
+        }
+        header{
+            width: 100%;
+            background-color: #f9c5d1; /* Более светлый розовый */
+            padding: 3vmin 0; /* Увеличиваем паддинг */
+            height: auto; /* Позволяем подстраиваться под контент */
+        }
+        main{
+            background-color: #fdd9e2; /* Еще более светлый розовый */
+            height: auto; /* Высота подстраивается под контент */
+            padding: 2vmin 0; /* Добавляем отступы сверху и снизу */
+        }
+        article{
+            width: 100%;
+            display: flex;
+            justify-content: space-around; /* Равномерное распределение */
+            padding: 2vmin; /* Отступы */
+            flex-wrap: wrap; /* Позволяет переносить на новые строки */
+        }
+        .container{
+            border-radius: 15px;
+            border: 2px solid #fccf7e;
+            width: 30%;
+            padding: 2vmin; /* Увеличиваем паддинг */
+            margin-bottom: 2vmin;
+            background: #fff; /* Белый фон для контейнеров */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Мягкая тень */
+        }
+         .container:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        img{
+            height: 25vh;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        p{
+             color: #444;
+             font-weight: 500; /* Делаем текст немного более жирным */
+             margin-top: 1vmin;
+         }
+        footer{
+            height: 3vh;
+            background-color: #f9c5d1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+        }
+        h2{
+            font-size: 2em;
+            color: #333;
+        }
+        @media (max-width: 768px) { /* Для маленьких экранов */
+            .container {
+                width: 80%;
+            }
+            img{
+               height: 20vh;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>Люблю тебя, принцесска! &#10084;</h2>
+    </header>
+    <main>
+        <article>
+            <div class="container">
+                <img src="./color.jpg" alt="Цвет">
+                <p>Цвет</p>
+            </div>
+            <div class="container">
+                <img src="./дом.jpg" alt="Место">
+                <p>Место</p>
+            </div>
+            <div class="container">
+                <img src="./sus.jpg" alt="Еда">
+                <p>Еда</p>
+            </div>
+        </article>
+        <article>
+            <div class="container">
+                <img src="./кофе.jpg" alt="Напиток">
+                <p>Напиток</p>
+            </div>
+            <div class="container">
+                <img src="./хобби.jpg" alt="Хобби">
+                <p>Хобби</p>
+            </div>
+            <div class="container">
+                <img src="./машина.jpg" alt="Машина">
+                <p>Машина</p>
+            </div>
+        </article>
+        <article>
+            <div class="container">
+                <img src="./цветы.webp" alt="Цветы">
+                <p>Цветы</p>
+            </div>
+            <div class="container">
+                <img src="./котик.jpg" alt="Животное">
+                <p>Животное</p>
+            </div>
+            <div class="container">
+                <img src="./фурия.jpg" alt="Персонаж">
+                <p>Персонаж</p>
+            </div>
+        </article>
+    </main>
+    <footer>От огромника &#10084;</footer>
+</body>
+</html>
